@@ -8,7 +8,6 @@ import { useHistory } from 'react-router-dom';
 const UploadPage = () => {
   const [imageFile, setImageFile] = useState(null)
   const [previewImage, setPreviewImage] = useState(null)
-  const [message, setMessage] = useState('')
   const history = useHistory()
 
 
@@ -52,10 +51,10 @@ const UploadPage = () => {
             src={previewImage}
             width="50%"
             height="50%"
+            alt="preview"
           />
           ) : (
           <h3  className="text-center">
-            {message ? message : "Live Preview"}
           </h3>
         )}
       </div>

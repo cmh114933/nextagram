@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { useParams, useHistory } from "react-router-dom"
+import { useHistory } from "react-router-dom"
 import UserImages from "../containers/UserImages"
 import axios from "axios"
 import { Container, Button } from "reactstrap"
